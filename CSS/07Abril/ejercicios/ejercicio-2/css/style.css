@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+input:required{
+    border-color: red;
+}
+
+fieldset{
+    background-color: gray;
+    padding: 1rem;
+}
+
+fieldset:hover{
+    background-color: rgb(49, 49, 49);
+}
+
+fieldset:not(:nth-child(2)){
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+}

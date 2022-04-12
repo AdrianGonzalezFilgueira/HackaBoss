@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 15rem;
+    border-radius: 20rem;
+}
+
+address ul li{
+    justify-content: flex-end;
+    list-style: none;
+}

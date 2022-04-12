@@ -1,0 +1,25 @@
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 200px); /* 1fr 1fr 1fr */
+    grid-template-rows: repeat(auto-fit, 200px);
+    place-items: center;
+    place-content: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    margin: 0.5rem;
+    font-size: 40px;
+    border: 2px solid black;
+    color: brown;
+    height: 100px;
+    width: 100px;
+}
+
+/* div:first-child {
+    grid-column: span 3;
+} */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio 2</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Personaliza tu hamburguesa</legend>
+
+                <fieldset>
+                    <legend>Ingredientes</legend>
+
+                    <label for="cheese">Queso</label>
+                    <input type="checkbox" id="cheese" name="cheese" />
+
+                    <label for="pepper">Pimiento</label>
+                    <input type="checkbox" id="pepper" name="pepper" />
+
+                    <label for="onion">Cebolla</label>
+                    <input type="checkbox" id="onion" name="onion" />
+
+                    <label for="ham">Jamón</label>
+                    <input type="checkbox" id="ham" name="ham" />
+
+                    <label for="egg">Huevo</label>
+                    <input type="checkbox" id="egg" name="egg" />
+                </fieldset>
+                <fieldset>
+                    <legend>Tamaño</legend>
+
+                    <label for="small">Pequeña</label>
+                    <input type="radio" id="small" name="size" />
+
+                    <label for="medium">Mediana</label>
+                    <input type="radio" id="medium" name="size" />
+
+                    <label for="big">Grande</label>
+                    <input type="radio" id="big" name="size" />
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de entrega</legend>
+
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" />
+
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address" />
+
+                <label for="tel">Teléfono</label>
+                <input
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                />
+
+                <label for="message">Instrucciones especiales</label>
+                <textarea name="message" id="message"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Método de pago</legend>
+
+                <select name="payment" id="payment">
+                    <option value="cash">Efectivo</option>
+                    <option value="card">Tarjeta de crédito</option>
+                    <option value="bank">Cuenta bancaria</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>

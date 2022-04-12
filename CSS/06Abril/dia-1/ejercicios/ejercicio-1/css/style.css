@@ -1,0 +1,60 @@
+header{
+    background-color: rgb(35, 143, 214);
+
+}
+
+h1{
+    color: white;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 140, 255);
+}
+
+li{
+    padding-bottom: 1rem;
+}
+
+li.importante{
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+table{
+    height: 100%;
+    width: 35%;
+    text-align: center;
+}
+
+thead:first-child{
+    background-color: rgb(35, 143, 214);
+    color: white;
+}
+
+tr{
+    height: 70px;
+}
+
+td#descanso{
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+}
+
+tbody tr *:first-child{
+    background-color: aqua;
+}
+
+tbody tr:nth-child(odd) td{
+    background-color: blueviolet;
+}
+
+tbody tr:nth-child(even) td{
+    background-color: rgb(185, 47, 82);
+}
+
+
+

@@ -1,0 +1,24 @@
+/* 1rem = 16px | 10rem = 160px*/
+img {
+    width: 10rem;
+}
+
+blockquote {
+    font-size: 2.5rem;
+}
+
+/* Flotamos a la derecha. */
+.right {
+    float: right;
+}
+
+/* Flotamos a la izquierda. */
+.left {
+    float: left;
+}
+
+/* Anulamos el efecto de cualquier float que aplique a este selector. */
+.clear {
+    clear: both;
+    font-style: italic;
+}

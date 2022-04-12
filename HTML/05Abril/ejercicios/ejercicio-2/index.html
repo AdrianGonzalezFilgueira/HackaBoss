@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 Formulario</title>
+  </head>
+  <body>
+    <header style="background-color: rgb(250, 135, 212); text-align: center">
+      <h1 style="color: white; padding-top: 30px">Debrable</h1>
+      <nav>
+        <ul>
+          <li style="display: inline">
+            <a href="#top10" style="color: white; font-size: 20px">
+              Mi TOP 10 películas</a
+            >
+          </li>
+          <li style="display: inline">
+            <a href="#viaje" style="color: white; font-size: 20px">
+              Mi viaje a Japón</a
+            >
+          </li>
+          <li style="display: inline">
+            <a href="#contacto" style="color: white; font-size: 20px">
+              Mándame un mensaje</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      style="
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        float: right;
+        justify-content: right;
+        padding-top: 20px;
+        text-align: center;"
+    >
+      <article id="perfil">
+        <img
+          src="./ramen.jpg"
+          alt="perfil"
+          style="width: 200px; border-radius: 50%"
+        />
+        <h2>Adrián González</h2>
+        <p>Aquí escribo todo lo que se me ocurre.</p>
+        <p>adrian@hackaboss.com</p>
+      </article>
+    </section>
+    <section style="padding-left: 100px">
+      <article id="top10">
+        <h2>Mi TOP 10 películas</h2>
+
+        <ol style="column-count: 2">
+          <li>Hotel Budapest</li>
+          <li>Fantastic Mr. Fox</li>
+          <li>Isla de perros</li>
+          <li>Alien</li>
+          <li>Los mundos de Coraline</li>
+          <li>Monsters university</li>
+          <li>Mad Max</li>
+          <li>The thing</li>
+          <li>Scott Pilgrim vs The World</li>
+          <li>Rocky Horror Picture Show</li>
+        </ol>
+      </article>
+
+      <article id="viaje">
+        <h2>Mi viaje a Japón</h2>
+        <img
+          src="./japan.jpg"
+          alt="Distrito Japón"
+          width="15%"
+          height="15%"
+          style="border-radius: 20px; float: left;"
+        />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+          exercitationem dolorum cumque odio qui quaerat voluptates. Odit, natus
+          facere! Enim labore maxime ipsa quas blanditiis quod quidem iste
+          consectetur adipisci dolor eaque mollitia laboriosam nemo nostrum
+          libero ratione, laborum ex exercitationem doloremque dolores? In totam
+          perspiciatis ullam rerum expedita libero, nobis facilis non explicabo
+          animi sequi vero eveniet aliquam iusto consectetur. Vel beatae
+          mollitia ipsam excepturi voluptate recusandae, eum incidunt accusamus
+          molestiae tempora at corporis, fugit, aspernatur accusantium iure
+          voluptatibus quod blanditiis quidem quaerat? Dignissimos possimus
+          tempora libero quidem eum aspernatur quia ab qui. Id molestias est
+          ullam aliquid inventore esse dolores sed earum iure incidunt numquam
+          repellat sequi nisi dolor, asperiores vero modi, saepe quis at fugiat.
+          Nostrum ut blanditiis quia ducimus praesentium aperiam consectetur
+          mollitia aspernatur quae, eum excepturi autem! Placeat maxime ex
+          reprehenderit natus impedit asperiores ad, veritatis velit quo non
+          dignissimos nam numquam commodi eos incidunt.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          aspernatur sequi error sed placeat, sunt nihil! Sapiente reiciendis
+          iste explicabo adipisci, aspernatur veniam quia odio! Nemo id labore
+          voluptate animi dolorem eum iure voluptatibus ad placeat repudiandae
+          sed commodi natus dolorum, accusantium quo perspiciatis assumenda
+          nostrum voluptates cum! Suscipit neque explicabo sint laudantium! Enim
+          hic quas aperiam perspiciatis iure fugiat, corrupti sint tenetur
+          laudantium cumque nostrum, fuga pariatur ratione vero porro! Deleniti
+          ipsa quia architecto tenetur voluptas. Architecto commodi iste natus
+          quidem qui distinctio accusantium sint sequi modi mollitia, vel ex
+          vitae quas, assumenda facere! In quam beatae ex vel.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+          veniam doloremque nihil, corrupti at laboriosam inventore qui, dolorum
+          molestiae sed nisi dignissimos voluptate ipsum ab.
+        </p>
+      </article>
+    </section>
+    <section >
+      <article id="contacto" style="background-color: rgb(163, 0, 238); text-align: center;">
+        <h2>Mándame un mensaje</h2>
+        <form action="#" method="get">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="nacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="nacimiento" name="nacimiento" required />
+
+          <label for="comentarios">Comentarios:</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            placeholder="Deja aquí tu comentario..."
+          ></textarea>
+
+          <input type="checkbox" id="suscripcion" name="suscripcion" />
+          <label for="suscripcion">Suscribirse a newsletter:</label>
+
+          <button type="submit">Enviar</button>
+        </form>  
+        <footer style="background-color: aqua">
+            <p style="text-align: center">
+              Términos y condiciones | Política de privacidad
+            </p>
+         </footer>   
+        </section>  
+  </body>
+</html>

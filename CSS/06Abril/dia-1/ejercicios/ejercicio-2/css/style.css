@@ -1,0 +1,24 @@
+li[data-name="hack"]{
+    text-decoration:underline;
+    text-decoration-color: red;
+}
+
+ul li:nth-child(2):hover{
+    background-color: yellow;
+}
+
+li.emoji::after{
+    content: "🔥";
+}
+
+ul li:last-child::first-letter{
+    color: orangered;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}

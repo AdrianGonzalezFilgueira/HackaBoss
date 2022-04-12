@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Por defecto el ancho total: width + padding + border */
+    /* Por defecto el alto total: height + padding + border */
+
+    /* Para corregir lo anterior y hacer que el ancho y alto
+       sean siempre lo que nosotros indiquemos en "width" y
+       "height" se utiliza la siguiente propiedad. */
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* Distribuye los elementos en el mismo eje que flex-direction */
+    justify-content: space-around;
+    /* Distribuye los elementos en el eje contrario que flex-direction */
+    align-items: flex-end;
+    /* Funciona igual que align items pero me permite usar otros valores
+       como: space-between, space-evenly o space-around. */
+    align-content: space-around;
+    height: 900px;
+    background-color: gainsboro;
+}
+
+main > div {
+    border: 1px dashed black;
+    height: 200px;
+    width: 200px;
+    background-color: blanchedalmond;
+}
+
+main > div:first-child {
+    order: 2;
+}
+
+main > div:nth-child(4) {
+    order: 1;
+    flex-basis: 100vw;
+}

@@ -1,0 +1,45 @@
+div {
+    background-color: rgb(255, 205, 131);
+    border: 5px dotted black;
+    height: 400px;
+    width: 400px;
+
+    /* Eje vertical, eje horizontal */
+    margin: 60px 20px;
+
+    /* Arriba, derecha, abajo, izquierda */
+    padding: 20px 60px 30px 5px;
+
+    /* Si cambiamos el valor de box-sizing a border-box el ancho
+       del contenedor pasará a ser el indicado con width. */
+    box-sizing: border-box;
+
+    overflow: auto;
+}
+
+/* Podemos modificar el margin horizontal, el padding y el borde
+   de cualquier elemento inline. */
+strong {
+    border: 1px solid black;
+    margin: 0 10px;
+    padding: 1rem;
+}
+
+/* A los elementos inline-block podemos darles márgenes, height y width. */
+span {
+    display: inline-block;
+    color: brown;
+    font-weight: bold;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+div:last-of-type {
+    background-image: url(../pics/hamburguesa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px black;
+}

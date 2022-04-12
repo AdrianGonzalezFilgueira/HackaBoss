@@ -1,0 +1,99 @@
+/* Importamos una letra personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Aquí podemos agregar variables personalizadas */
+:root {
+    --color-blue: rgba(0, 0, 255, 0.185);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+
+p {
+    /* Aplicamos un grosor de 300 */
+    font-weight: 300;
+}
+
+li {
+    /* Aplicamos un grosor de 500 */
+    font-weight: 500;
+}
+
+/* Selector por etiqueta */
+h2 {
+    color: goldenrod;
+}
+
+section#primero {
+    background-color: var(--color-blue);
+}
+
+/* Selector por ID */
+#cabecera {
+    background-color: bisque;
+}
+
+/* Selector por clase */
+.destacado {
+    text-decoration: overline;
+}
+
+/* Selector por atributo */
+[type='checkbox'] {
+    height: 30px;
+    width: 30px;
+}
+
+/* Data Attributes (atributos inventados) */
+[data-mi-atributo-personalizado] {
+    font-size: 50px;
+}
+
+/* Pseudo-classes */
+a:visited {
+    color: grey;
+}
+
+section#segundo > ul > li:first-child {
+    color: red;
+}
+
+section#segundo > ul > li:last-child {
+    color: green;
+}
+
+section#segundo > ul > li:nth-child(4) {
+    color: palevioletred;
+}
+
+section#tercero > ul > li:nth-child(odd) {
+    font-weight: bold;
+}
+
+section#tercero > ul > li:nth-child(even) {
+    text-transform: uppercase;
+}
+
+li:hover {
+    font-size: 30px;
+}
+
+/* Pseudo-elements */
+#importante::first-letter {
+    color: white;
+    font-size: 30px;
+    background-color: black;
+}
+
+section#primero > p:last-of-type::first-line {
+    color: red;
+}
+
+p::selection {
+    background-color: blue;
+    color: white;
+}

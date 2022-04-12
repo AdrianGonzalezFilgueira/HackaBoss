@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+      <ul>
+        <li><a href="./index.html">Ir a inicio</a></li>
+      </ul>
+    </header>
+    <main>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Datos de log</legend>
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" autofocus />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros datos</legend>
+          <p>
+            <label for="num">Cantidad:</label>
+            <input type="number" name="num" id="num" step="10" disabled />
+          </p>
+          <p>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" name="tel" id="tel" />
+          </p>
+          <p>
+            <label for="web">Web:</label>
+            <input
+              type="url"
+              id="web"
+              name="web"
+              placeholder="Escribe aquí la URL de tu web"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Otro tipo de Campos</legend>
+          <fieldset>
+            <legend>Permisos (checkbox)</legend>
+            <p>
+              <input type="checkbox" id="check" name="check" checked />
+              <label for="check">Acepto los términos y condiciones</label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Género (radio)</legend>
+            <ul>
+              <li>
+                <input type="radio" id="man" name="gender" />
+                <label for="man">Hombre</label>
+              </li>
+              <li>
+                <input type="radio" id="mujer" name="gender" />
+                <label for="mujer">Mujer</label>
+              </li>
+              <li>
+                <input type="radio" id="otros" name="gender" />
+                <label for="otros">Otros</label>
+              </li>
+            </ul>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>TextArea</legend>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Deja aquí tu mensaje..."
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Desplegable</legend>
+          <select name="simpsons" id="simpsons">
+            <option value="0">Homer</option>
+            <option value="1">Marge</option>
+            <option value="2">Bart</option>
+            <option value="3">Lisa</option>
+            <option value="4">Maggie</option>
+          </select>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+    </main>
+  </body>
+</html>

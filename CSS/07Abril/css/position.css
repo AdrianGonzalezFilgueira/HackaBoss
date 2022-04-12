@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
+
+/* Nos permite darle al elemento varias propiedades como son: top, left, bottom
+   y right. */
+div.relative {
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+/* Posiciona al elemento en referencia al primer elemento padre, abuelo,
+   tatarabuelo que tenga position relative. Si no hay ningún elemento con
+   position relative toma como referencia el elemento raíz: el html. */
+div.absolute {
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+
+/* Funciona igual que el absoluto pero al hacer scroll el elemento
+   nos acompañará. */
+div.fixed {
+    position: fixed;
+    top: 0;
+    left: 500px;
+}
+
+/* Mezcla entre relativo y absoluto. No puede moverse si no tiene
+   espacio. */
+div.sticky {
+    position: sticky;
+    top: 40px;
+    left: 100px;
+}

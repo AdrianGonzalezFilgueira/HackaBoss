@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML y CSS 4</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#form">Formulario</a></li>
+        </ul>
+      </nav>
+      <h2>Vacas</h2>
+      <button>Comprar</button>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Lorem ipsum</h2>
+        <div class="content-wrapper">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            quis deserunt soluta nesciunt explicabo, sed minus veritatis iusto
+            distinctio eveniet cumque ut porro exercitationem culpa veniam vero
+            nobis. Quam unde, totam pariatur ea quibusdam assumenda corrupti.
+            Suscipit nobis quasi fuga.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
+            ipsum perferendis velit, harum molestiae accusantium eaque,
+            voluptate repellendus sunt ullam voluptas voluptatem cupiditate.
+            Veritatis aut, ipsa quibusdam ab nemo illum?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            libero quam deleniti expedita quis dolorum dolorem, est soluta,
+            molestias consectetur eveniet earum iure accusamus quos repellat
+            odio ipsam vitae eos laudantium? Fuga pariatur aspernatur deleniti
+            quos, sit nostrum debitis maiores?
+          </p>
+        </div>
+      </section>
+      <section id="vacas">
+        <article>
+          <header>
+            <h2>Vaca 1</h2>
+            <figure>
+              <img src="./img/vaca_1.png" alt="Foto de la vaca 1" />
+            </figure>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            fugiat atque rem facilis voluptatum animi iusto praesentium ad
+            laudantium omnis.
+          </p>
+          <a href="#form">Comprar</a>
+        </article>
+        <article>
+          <header>
+            <h2>Vaca 2</h2>
+            <figure>
+              <img src="./img/vaca_1.png" alt="Foto de la vaca 1" />
+            </figure>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            fugiat atque rem facilis voluptatum animi iusto praesentium ad
+            laudantium omnis.
+          </p>
+          <a href="#form">Comprar</a>
+        </article>
+        <article>
+          <header>
+            <h2>Vaca 3</h2>
+            <figure>
+              <img src="./img/vaca_1.png" alt="Foto de la vaca 1" />
+            </figure>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            fugiat atque rem facilis voluptatum animi iusto praesentium ad
+            laudantium omnis.
+          </p>
+          <a href="#form">Comprar</a>
+        </article>
+      </section>
+      <section id="form">
+        <form>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+          <fieldset>
+            <label for="name">Nome e apelidos</label>
+            <input type="text" id="name" name="name" />
+          </fieldset>
+
+          <fieldset>
+            <label for="address">Dirección</label>
+            <input type="text" id="address" name="address" />
+          </fieldset>
+
+          <fieldset>
+            <label for="province">Provincia</label>
+            <select id="province" name="province">
+              <option value="corunha">A Coruña</option>
+              <option value="lugo">Lugo</option>
+              <option value="ourese">Ourense</option>
+              <option value="pontevedra">Pontevedra</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="feedback">Comentarios</label>
+            <textarea id="feedback" name="feedback"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <label for="newsletter">Recibir Newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+          </fieldset>
+
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

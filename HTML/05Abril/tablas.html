@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+      <ul>
+        <li><a href="./index.html">Ir a inicio</a></li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <h2>TABLA 1</h2>
+        <table border="1">
+          <tr>
+            <td>Dato 1A</td>
+            <td>Dato 1B</td>
+            <td>Dato 1C</td>
+          </tr>
+          <tr>
+            <td>Dato 2A</td>
+            <td>Dato 2B</td>
+            <td>Dato 2C</td>
+          </tr>
+          <tr>
+            <td>Dato 3A</td>
+            <td>Dato 3B</td>
+            <td>Dato 3C</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>TABLA 2</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Columna A</th>
+              <th>Columna B</th>
+              <th>Columna C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+              <td>Dato 3</td>
+            </tr>
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+              <td>Dato 3</td>
+            </tr>
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+              <td>Dato 3</td>
+            </tr>
+            <tfoot><tr><td style="text-align: center;" colspan="3">Pié de tabla</td></tr></tfoot>
+          </tbody>
+        </table>
+      </section>
+      <section>
+          <h2>TABLA 3</h2>
+          <table border="1">
+              <thead>
+                  <tr>
+                      <th colspan="3">Columna 1</th>
+                      <th>Columna 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dato 1</td>
+                    <td colspan="2" rowspan="2">Dato 2</td>
+                    <td rowspan="3">Dato 4</td>
+                  </tr>
+                  <tr>
+                    <td>Dato 1</td>
+                  </tr>
+                  <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                  </tr>
+                </tbody>
+          </table>
+      </section>
+    </main>
+  </body>
+</html>
